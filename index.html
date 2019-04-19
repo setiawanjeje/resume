@@ -1,130 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8" />
-    <title>Jessica</title>
+    <title>Jessica's Resume</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
     <meta name="supported-color-schemes" content="light dark" />
 
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link
-      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Quicksand:400,500,700"
       rel="stylesheet"
-      type="text/css"
     />
 
-    <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="img/mesilau.JPG" />
   </head>
   <body>
+    <!-- I knew it! 
+      You're gonna inspect this page so 
+      here’s a little secret 
+      *and it's just between us* 
+      
+      
+
+    -->
     <div class="root">
       <div class="nav">
-        <div class="container">
-          <ul>
-            <li>
-              <a href="#about">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#experience">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#experience">
+              Experience
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
       </div>
 
       <section id="about" class="u-full-width full-height">
         <div class="container">
-          <div class="row">
-            <div class="six columns intro">
+          <div class="flex">
+            <div class="left">
               <h1>Hello World, <br />My name is <b>Jessica Setiawan</b>.</h1>
-              <p>I’m a UI Developer based in Jakarta, Indonesia.</p>
+              <p class="color-primary">
+                I’m a UI Developer based in Jakarta, Indonesia.
+              </p>
             </div>
-            <div class="six columns photo-wrapper">
-              <img src="./img/mesilau.JPG" alt="" class="photo" />
+            <div class="right photo-wrapper">
+              <img src="./img/medual.JPG" alt="" class="photo" />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="u-full-width full-height">
-        <div class="container">
-          <div class="row">
-            <div class="six columns">
-              <img src="./img/me.jpeg" alt="" class="photo" />
-            </div>
-            <div class="six columns">
-              <h2>Experience</h2>
-              <dl>
-                <dt>
-                  <b>UI Developer at Traveloka</b> <br />
-                  October 2016 - Now, 2 years and still counting
-                </dt>
-                <dd>
-                  <ul>
-                    <li>
-                      Build components for Traveloka Web (Desktop and Mobile)
-                    </li>
-                    <li>Design and build layout for internal tools</li>
-                    <li>
-                      Help design system team to define design tokens and
-                      components
-                    </li>
-                    <li>
-                      Write an article:
-                      <a
-                        href="https://medium.com/traveloka-design/when-design-meets-engineering-at-traveloka-dbcc11f46f03"
-                        >When Design meets Engineering at Traveloka</a
-                      >
-                    </li>
-                    <li>Main tech: React, CSS-in-JS, React Native</li>
-                  </ul>
-                </dd>
-                <dt>
-                  <b>Front End Developer at Suitmedia</b> <br />
-                  March 2015 - October 2016, 1 year 7 months
-                </dt>
-                <dd>
-                  <ul>
-                    <li>
-                      Build responsive websites for company profile and
-                      microsites for campaign purpose
-                    </li>
-                    <li>Collaborate with UI Designer and Back-end Developer</li>
-                    <li>Main tech: jQuery, SCSS, HTML</li>
-                  </ul>
-                </dd>
-              </dl>
-            </div>
+      <section id="experience" class="u-full-width ">
+        <div class="flex">
+          <div class="left portrait">
+            <img
+              src="./img/meworkdual.jpg"
+              alt="Portrait of Jessica Setiawan"
+            />
+          </div>
+          <div class="right full-height">
+            <h2>Experience</h2>
+            <dl>
+              <dt>
+                <b class="color-primary">UI Developer at Traveloka</b> <br />
+                October 2016 - Now, 2 years and still counting
+              </dt>
+              <dd>
+                <ul>
+                  <li>
+                    Build components for Traveloka Web (Desktop and Mobile)
+                  </li>
+                  <li>Design and build layout for internal tools</li>
+                  <li>
+                    Help design system team to define design tokens and
+                    components
+                  </li>
+                  <li>
+                    Write an article:
+                    <a
+                      href="https://medium.com/traveloka-design/when-design-meets-engineering-at-traveloka-dbcc11f46f03"
+                      >When Design meets Engineering at Traveloka</a
+                    >
+                  </li>
+                  <li>Main tech: React, CSS-in-JS, React Native</li>
+                </ul>
+              </dd>
+              <dt>
+                <b class="color-primary">Front End Developer at Suitmedia</b>
+                <br />
+                March 2015 - October 2016, 1 year 7 months
+              </dt>
+              <dd>
+                <ul>
+                  <li>
+                    Build responsive websites for company profile and microsites
+                    for campaign purpose
+                  </li>
+                  <li>Collaborate with UI Designer and Back-end Developer</li>
+                  <li>Main tech: jQuery, SCSS, HTML</li>
+                </ul>
+              </dd>
+            </dl>
           </div>
         </div>
       </section>
 
       <section id="contact" class="u-full-width full-height">
         <div class="container">
-          <div class="row">
+          <div class="flex">
             <div class="twelve columns">
               <h2>Reach me out!</h2>
               <div class="icon-wrapper">
@@ -176,7 +175,10 @@
       </section>
     </div>
 
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
