@@ -88,6 +88,7 @@ dd {
 
 #about {
   background-color: var(--dark);
+  padding: var(--mainSpacing) 0;
 }
 
 #about p {
