@@ -23,7 +23,7 @@ dt {
 }
 
 dd {
-  margin-left: var(--mainSpacing);
+  margin-left: 32px;
 }
 
 .flex {
@@ -95,37 +95,52 @@ dd {
 }
 
 #about .left {
+  order: 2;
   flex: 1;
+  width: 100%;
   margin-right: var(--mainSpacing);
 }
 
-.photo-wrapper {
+#about .right {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  order: 1;
+  width: 100%;
+}
+
+@media (min-width: 750px) {
+  #about .left {
+    order: 1;
+  }
+
+  #about .right {
+    flex: 0;
+    order: 2;
+    justify-content: center;
+  }
 }
 
 .portrait {
   width: 100%;
-  object-fit: cover;
-  object-position: center;
   overflow: hidden;
+  margin-bottom: var(--mainSpacing);
 }
 
 .portrait img {
   display: block;
   width: 100%;
-  margin-bottom: var(--mainSpacing);
 }
 
 @media (min-width: 750px) {
   .portrait {
     width: 40%;
+    height: calc(100vh - 2 * var(--mainSpacing));
+    margin-bottom: 0;
     margin-right: var(--mainSpacing);
   }
 
   .portrait img {
-    margin-bottom: 0;
     width: auto;
     height: calc(100vh - 2 * var(--mainSpacing));
   }
@@ -133,7 +148,7 @@ dd {
 
 #experience .right {
   background-color: var(--dark);
-  padding: var(--mainSpacing);
+  padding: 32px;
   width: 100%;
 }
 
@@ -163,8 +178,8 @@ dd {
 
 .icon,
 .icon > svg {
-  width: var(--mainSpacing);
-  height: var(--mainSpacing);
+  width: 32px;
+  height: 32px;
   fill: var(--dark);
 }
 

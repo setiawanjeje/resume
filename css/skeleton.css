@@ -186,9 +186,9 @@ html {
 body {
   scroll-behavior: smooth;
 
-  --dark: #0d3b66;
-  --light: #fbf8f2;
-  --primary: #f4ac45;
+  --dark: #1c4b5f;
+  --light: #fff8f8;
+  --primary: #f18c83;
 
   --mainSpacing: 16px;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
