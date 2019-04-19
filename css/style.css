@@ -93,13 +93,13 @@ dd {
 
 #about p {
   font-size: 1.3em;
+  margin-bottom: 0;
 }
 
 #about .left {
   order: 2;
   flex: 1;
   width: 100%;
-  margin-right: var(--mainSpacing);
 }
 
 #about .right {
@@ -113,6 +113,7 @@ dd {
 @media (min-width: 750px) {
   #about .left {
     order: 1;
+    margin-right: var(--mainSpacing);
   }
 
   #about .right {
@@ -149,7 +150,7 @@ dd {
 
 #experience .right {
   background-color: var(--dark);
-  padding: 32px;
+  padding: var(--mainSpacing);
   width: 100%;
 }
 
@@ -160,12 +161,26 @@ dd {
 }
 
 .photo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid var(--primary);
   margin-bottom: 16px;
+}
+
+@media (min-width: 480px) {
+  .photo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 750px) {
+  .photo {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .full-height {
@@ -196,11 +211,4 @@ dd {
 
 .color-primary {
   color: var(--primary);
-}
-
-@media (min-width: 750px) {
-  .photo {
-    width: 300px;
-    height: 300px;
-  }
 }
